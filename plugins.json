@@ -1,0 +1,78 @@
+[
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=animefenix.com&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/manolixgt/manolixgt-repository_cs3",
+        "fileSize": 17837,
+        "status": 1,
+        "language": "es",
+        "authors": [
+            "manolixgt"
+        ],
+        "tvTypes": [
+            "Anime",
+            "OVA"
+        ],
+        "version": 2,
+        "internalName": "AnimefenixProvider",
+        "url": "https://raw.githubusercontent.com/manolixgt/manolixgt-repository_cs3/builds/AnimefenixProvider.cs3",
+        "name": "AnimefenixProvider"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=cinehdplus.org&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/manolixgt/manolixgt-repository_cs3",
+        "fileSize": 15919,
+        "status": 1,
+        "language": "es",
+        "authors": [
+            "manolixgt"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "CineHDPlusProvider",
+        "url": "https://raw.githubusercontent.com/manolixgt/manolixgt-repository_cs3/builds/CineHDPlusProvider.cs3",
+        "name": "CineHDPlusProvider"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=cuevana3.ai&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/manolixgt/manolixgt-repository_cs3",
+        "fileSize": 19957,
+        "status": 1,
+        "language": "es",
+        "authors": [
+            "manolixgt"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "Cuevana3Provider",
+        "url": "https://raw.githubusercontent.com/manolixgt/manolixgt-repository_cs3/builds/Cuevana3Provider.cs3",
+        "name": "Cuevana3Provider"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=monoschinos2.com&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/manolixgt/manolixgt-repository_cs3",
+        "fileSize": 12693,
+        "status": 1,
+        "language": "es",
+        "authors": [
+            "manolixgt"
+        ],
+        "tvTypes": [
+            "Anime",
+            "OVA"
+        ],
+        "version": 2,
+        "internalName": "MonoschinosProvider",
+        "url": "https://raw.githubusercontent.com/manolixgt/manolixgt-repository_cs3/builds/MonoschinosProvider.cs3",
+        "name": "MonoschinosProvider"
+    }
+]
