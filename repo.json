@@ -1,0 +1,8 @@
+{
+  "name": "manolixgt  Repository",
+  "description": "test Providers",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/Stormunblessed/kamy-cs3/builds/plugins.json"
+  ]
+}
