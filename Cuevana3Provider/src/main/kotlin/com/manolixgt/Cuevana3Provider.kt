@@ -10,7 +10,7 @@ import com.lagradost.cloudstream3.utils.loadExtractor
 
 class Cuevana3Provider : MainAPI() {
     override var mainUrl = "https://cuevana3.ai"
-    override var name = "Cuevana"
+    override var name = "Cuevana3"
     override var lang = "es"
     override val hasMainPage = true
     override val hasChromecastSupport = true
@@ -23,7 +23,7 @@ class Cuevana3Provider : MainAPI() {
     override suspend fun getMainPage(page: Int, request : MainPageRequest): HomePageResponse {
         val items = ArrayList<HomePageList>()
         val urls = listOf(
-            Pair(mainUrl, "Recientemente actualizadas"),
+            Pair("$mainUrl/inicio/", "Recientemente actualizadas"),
             Pair("$mainUrl/estrenos/", "Estrenos"),
         )
         items.add(
@@ -38,7 +38,7 @@ class Cuevana3Provider : MainAPI() {
                             title,
                             url,
                             this.name,
-                            TvType.Anime,
+                            TvType.TvSeries,
                             poster,
                             null,
                             null,
@@ -69,7 +69,7 @@ class Cuevana3Provider : MainAPI() {
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
-        val url = "$mainUrl/?s=${query}"
+        val url = "$mainUrl/search/${query}"
         val document = app.get(url).document
 
         return document.select("li.xxx.TPostMv").map {
@@ -225,15 +225,15 @@ class Cuevana3Provider : MainAPI() {
             }
             if (iframe.contains("tomatomatela")) {
                 val tomatoRegex =
-                    Regex("(\\/\\/apialfa.tomatomatela.com\\/ir\\/player.php\\?h=[a-zA-Z0-9]{0,8}[a-zA-Z0-9_-]+)")
+                    Regex("(\\/\\/apialfa.tomatomatela.club\\/ir\\/player.php\\?h=[a-zA-Z0-9]{0,8}[a-zA-Z0-9_-]+)")
                 tomatoRegex.findAll(iframe).map { tomreg ->
                     tomreg.value
                 }.toList().apmap { tom ->
-                    val tomkey = tom.replace("//apialfa.tomatomatela.com/ir/player.php?h=", "")
+                    val tomkey = tom.replace("//apialfa.tomatomatela.club/ir/player.php?h=", "")
                     app.post(
-                        "https://apialfa.tomatomatela.com/ir/rd.php", allowRedirects = false,
+                        "https://apialfa.tomatomatela.club/ir/rd.php", allowRedirects = false,
                         headers = mapOf(
-                            "Host" to "apialfa.tomatomatela.com",
+                            "Host" to "apialfa.tomatomatela.club",
                             "User-Agent" to USER_AGENT,
                             "Accept" to "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
                             "Accept-Language" to "en-US,en;q=0.5",
