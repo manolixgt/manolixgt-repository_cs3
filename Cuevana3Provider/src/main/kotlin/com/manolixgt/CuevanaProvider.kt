@@ -8,7 +8,7 @@ import com.lagradost.cloudstream3.utils.AppUtils.parseJson
 import com.lagradost.cloudstream3.utils.ExtractorLink
 import com.lagradost.cloudstream3.utils.loadExtractor
 
-class CuevanaProvider : MainAPI() {
+class Cuevana3Provider : MainAPI() {
     override var mainUrl = "https://cuevana3.ai"
     override var name = "Cuevana"
     override var lang = "es"
