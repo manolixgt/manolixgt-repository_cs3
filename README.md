@@ -1,5 +1,5 @@
 # `manolixgt Repo`
-Spanish and English providers with some links and domains updated based on [Stormunblessed](https://github.com/Aliucord).
+Spanish and English providers with some links and domains updated based on https://github.com/Stormunblessed 
 
 ## Attribution
 
