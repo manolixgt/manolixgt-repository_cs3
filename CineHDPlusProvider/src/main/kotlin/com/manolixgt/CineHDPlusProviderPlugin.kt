@@ -3,7 +3,7 @@ package com.manolixgt
 import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
 import com.lagradost.cloudstream3.plugins.Plugin
 import android.content.Context
-import com.lagradost.cloudstream3.movieproviders.PelisplusHDProvider
+import com.lagradost.cloudstream3.movieproviders.CineHDPlusProvider
 
 @CloudstreamPlugin
 class CineHDPlusProviderPlugin: Plugin() {
